@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MediCare — Health & Medical Blog</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5fbfc;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #087f8c;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #087f8c;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      background: #dff5f7;
+    }
+
+    .hero h1 {
+      max-width: 800px;
+      font-size: 55px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: #075d66;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .container {
+      width: 84%;
+      max-width: 1100px;
+      margin: 60px auto;
+    }
+
+    .section-title {
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: #075d66;
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .post {
+      background: white;
+      padding: 28px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .post small {
+      color: #087f8c;
+    }
+
+    .post h2 {
+      margin: 12px 0;
+      font-size: 22px;
+    }
+
+    .post p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .read-more {
+      color: #087f8c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .category {
+      background: #087f8c;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-size: 14px;
+    }
+
+    .about {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    footer {
+      background: #075d66;
+      color: white;
+      padding: 35px 8%;
+      text-align: center;
+      margin-top: 70px;
+    }
+
+    footer p {
+      color: #ccebed;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 800px) {
+
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .posts {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo">
+      MediCare
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#articles">Articles</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+
+  </header>
+
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <h1>
+      Better Health Starts With Better Knowledge.
+    </h1>
+
+    <p>
+      Welcome to MediCare — a simple medical and health blog
+      sharing useful information about health, nutrition,
+      diseases, prevention, and healthy living.
+    </p>
+
+  </section>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main class="container" id="articles">
+
+    <h2 class="section-title">
+      Latest Medical Articles
+    </h2>
+
+
+    <div class="posts">
+
+
+      <!-- ARTICLE 1 -->
+
+      <article class="post">
+
+        <small>
+          September 10, 2026 · Health
+        </small>
+
+        <h2>
+          Importance of a Healthy Lifestyle
+        </h2>
+
+        <p>
+          A healthy lifestyle includes balanced nutrition,
+          regular physical activity, enough sleep, and good
+          daily habits.
+        </p>
+
+        <a class="read-more" href="#">
+          Read article →
+        </a>
+
+      </article>
+
+
+      <!-- ARTICLE 2 -->
+
+      <article class="post">
+
+        <small>
+          September 7, 2026 · Nutrition
+        </small>
+
+        <h2>
+          Why Balanced Nutrition Matters
+        </h2>
+
+        <p>
+          Eating a balanced diet provides the body with
+          essential nutrients and helps support overall
+          health and wellbeing.
+        </p>
+
+        <a class="read-more" href="#">
+          Read article →
+        </a>
+
+      </article>
+
+
+      <!-- ARTICLE 3 -->
+
+      <article class="post">
+
+        <small>
+          September 4, 2026 · Prevention
+        </small>
+
+        <h2>
+          Simple Ways to Prevent Illness
+        </h2>
+
+        <p>
+          Good hygiene, healthy food, physical activity,
+          and regular medical checkups can help maintain
+          good health.
+        </p>
+
+        <a class="read-more" href="#">
+          Read article →
+        </a>
+
+      </article>
+
+
+    </div>
+
+
+    <!-- CATEGORIES -->
+
+    <section id="categories">
+
+      <h2 class="section-title" style="margin-top:70px;">
+        Explore Categories
+      </h2>
+
+      <div class="categories">
+
+        <span class="category">
+          Health Tips
+        </span>
+
+        <span class="category">
+          Nutrition
+        </span>
+
+        <span class="category">
+          Diseases
+        </span>
+
+        <span class="category">
+          Prevention
+        </span>
+
+        <span class="category">
+          Fitness
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about" style="margin-top:70px;">
+
+      <h2 class="section-title">
+        About MediCare
+      </h2>
+
+      <div class="about">
+
+        <p>
+          MediCare is a health and medical blogging website
+          created by <strong>Muhammad Unus</strong>, a student
+          at <strong>SIUT</strong>.
+        </p>
+
+        <br>
+
+        <p>
+          The purpose of this blog is to share simple and
+          useful information about health, nutrition,
+          disease prevention, and healthy living.
+        </p>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <strong>
+      MediCare
+    </strong>
+
+    <p>
+      Created by Muhammad Unus · SIUT
+    </p>
+
+    <p>
+      © 2026 MediCare. All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
+    </html>
